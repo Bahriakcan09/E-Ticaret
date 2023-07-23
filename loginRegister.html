@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:rgb(202, 241, 248);
+        }
+        .container{
+            position: relative;
+            height: 400px;
+            width:800px;
+            overflow: hidden;
+            display: flex;
+            border-radius: 20px;
+            background:rgb(0, 180, 215);
+            border: 3px solid rgb(3, 4, 94);
+        }
+        .container form,
+        .container .formImg{
+            height: 400px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .formImg{
+            background:rgba(0, 0, 0,0.25);
+            backdrop-filter:blur(5px) ;
+            position: absolute;
+            left: 0;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="login">
+            <div onclick="slideAnimation(true)">ffffff</div>
+        </form>
+        <form id="register">
+            <div onclick="slideAnimation(false)">ddddddd</div>
+        </form>
+        <div class="formImg">
+            <h2 style="font-size:50px;transform:rotate(-45deg);">Welcome</h2>
+        </div>
+    </div>
+    <script>
+        var slideDiv = document.querySelector(".formImg");
+        function slideAnimation(state){
+            if(state){
+            slideDiv.style.left="0px";
+            }
+            else{
+            slideDiv.style.left="400px";
+            }
+        }
+    </script>
+</body>
+</html>
