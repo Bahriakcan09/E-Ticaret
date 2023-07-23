@@ -12,7 +12,7 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg" style="background-color: #caf1f8;">
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #caf1f8;">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" style="width: 90px;height: 60px;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,11 +40,11 @@
           </div>
         </div>
       </nav>
-      <nav class="navbar border-top border-bottom border-dark" style="background-color: #caf1f8;">
+      <nav class="navbar border-top  border-dark" style="background-color: #caf1f8;">
         <div class="container-fluid d-flex justify-content-between">
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Arama Yap.." aria-label="Search" style="width: 25rem !important;">
-            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="btn btn-outline-info" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
           <div class="button-group d-flex justify-content-between">
           <div class="dropdown-center" >
@@ -57,13 +57,13 @@
               <li><a class="dropdown-item" href="#">Şifremi Unuttum</a></li>
             </ul>
           </div>
-          <a class="btn btn-secondary text-light" role="button" aria-disabled="true" style="border-radius: 30px;;background-color:#0078b7;color:#fff"><i class="fa-solid fa-cart-shopping fa-2xl" style="margin-top: 5px;"></i> Sepetim</a>
+          <a class="btn btn-secondary text-light" role="button" aria-disabled="true" style="border-radius: 30px;color:#fff"><i class="fa-solid fa-cart-shopping fa-2xl" style="margin-top: 5px;"></i> Sepetim</a>
         </div>
         </div>
           
         
       </nav>
-      <div class="btn-group btn-group-lg d-flex justify-content-between" role="group" aria-label="Large button group" style="background-color: #caf1f8;">
+      <div class="btn-group btn-group-lg d-flex justify-content-between" id="navbar-category" role="group" aria-label="Large button group" style="background-color: #e0f9fd">
         <button type="button" class="btn btn-outline-primary w-15">Koltuk</button>
         <button type="button" class="btn btn-outline-primary w-15">Masa ve Sandalye</button>
         <button type="button" class="btn btn-outline-primary">Dolap</button>
@@ -562,6 +562,11 @@
         </div>
 
 
+      </div>
+      <div id="footer" class="container d-flex justify-content-around" style="margin-bottom: 10px;">
+      <span>© 2023 embamobilya.com
+        Üyelik Sözleşmesi</span>
+        <span>Powered by <strong>Emba Software</strong></span>
       </div>
       <script src="script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

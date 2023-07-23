@@ -5,3 +5,14 @@ body{
 .social i{
     margin-right: 10px;
 }
+#navbar-category>button{
+    border:1px solid transparent;
+    background-color:#0078b7;
+    color: white;
+    transition: 0.5s all;
+}
+#navbar-category>button:hover{
+   color: #0078b7;
+   background-color: #ffffff;
+   border: 1px solid #0078b7;
+}
