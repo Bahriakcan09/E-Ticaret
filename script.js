@@ -22,7 +22,6 @@ oturmaOdasiAlan.setAttribute("style","display:none");
 calismaOdasiAlan.setAttribute("style","display:none");
 yatakOdasiAlan.setAttribute("style","display:none");
 yemekOdasiAlan.setAttribute("style","display:block");
-preventDefault();
 }
 
 function oturmaOdasiEvent(e){
@@ -30,7 +29,6 @@ function oturmaOdasiEvent(e){
     calismaOdasiAlan.setAttribute("style","display:none");
     yatakOdasiAlan.setAttribute("style","display:none");
 oturmaOdasiAlan.setAttribute("style","display:block");
-preventDefault();
 }
 
 function calismaOdasiEvent(e){
@@ -38,7 +36,6 @@ function calismaOdasiEvent(e){
     oturmaOdasiAlan.setAttribute("style","display:none");
     yatakOdasiAlan.setAttribute("style","display:none");
     calismaOdasiAlan.setAttribute("style","display:block");
-    preventDefault();
 }
 
 function yatakOdasiEvent(e){
@@ -46,5 +43,4 @@ function yatakOdasiEvent(e){
     oturmaOdasiAlan.setAttribute("style","display:none");
     calismaOdasiAlan.setAttribute("style","display:none");
     yatakOdasiAlan.setAttribute("style","display:block");
-    preventDefault();
 }
