@@ -1,0 +1,21 @@
+.list-group a{
+    display: flex;
+    align-items: center;
+}
+#productAdd{
+    position: absolute;
+    z-index: 5;
+    display: none !important;
+    max-width: 100%;
+}
+#productAdd form input,#productAdd form select{
+    margin: 5px;
+}
+#productAdd form{
+    padding: 10px;
+    max-width:40rem;
+    border: 1px solid rgb(148, 255, 219);
+    background-color: #F3F4F3;
+    border-radius: 5px;
+    height: 30rem;
+}
