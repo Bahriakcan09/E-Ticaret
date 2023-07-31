@@ -58,6 +58,23 @@
     border-radius: 10px;
     filter: drop-shadow(4px 3px 10px #0000003a);
 }
+#left-category button{
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+#left-category button:hover{
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+#right-category button{
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+#right-category button:hover{
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
 #right-category{
     width: 32rem;
     background-color: #caf1f8;
