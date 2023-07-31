@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'>
+</head>
+<body>
+    <div class="container" id="left-side" style="max-width: 10rem;float: left;padding: 0;">
+        <div class="list-group" id="left-bar">
+            <a href="main.html" class="list-group-item list-group-item-action bg-light" aria-current="true"><i class="fa-solid fa-house fa-lg"></i>Ana Sayfa </a>
+            <a href="products.html" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-bag-shopping fa-lg"></i>Ürünler</a>
+            <a href="users.html" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-users fa-lg"></i>Kullanıcılar</a>
+            <a href="category.html" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-bars fa-lg"></i>Kategoriler</a>
+            <a href="category.html" class="list-group-item list-group-item-action bg-light"><img src="/images/icons8-comments-25.png" alt="">Yorumlar</a>
+            <a href="category.html" class="list-group-item list-group-item-action bg-success text-light"><img src="/images/icons8-order-25.png" alt="">Siparişler</a>
+            <a href="category.html" class="list-group-item list-group-item-action bg-info text-light"><img src="/images/icons8-chat-25.png" alt=""></i>Sohbet</a>
+            <a href="category.html" class="list-group-item list-group-item-action bg-danger text-light"><img src="/images/icons8-report-25.png" alt=""></i>Şikayetler</a>
+          </div>
+    </div>
+    <nav class="navbar bg-body-tertiary" style="background:#64c5b1">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Arama yap.." aria-label="Search">
+            <button class="btn btn-primary" type="submit" style="margin-left: 5px;">Ara</button>
+          </form>
+        </div>
+      </nav>
+      <div id="users" class="container mt-2">
+        <div class="card">
+          <div class="card-header">
+   
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Kullanıcı Ekleme</h5>
+            <p class="card-text">Web sitenizi bu sayfada kolaylıkla yönetebilirsiniz..</p>
+            <button type="button" id="add" style="max-width:20rem;" class="btn btn-success"><i class="fa-solid fa-plus fa-2xl"></i>Kullanıcı Ekle</button>
+
+  
+        </div>
+        </div>
+        <!--users-->
+       <div class="row row-cols-5 mt-2" id="users-a">
+
+        <div class="card m-1" style="width: 10rem;border: none;">
+          <img src="/images/boy.png" class="card-img-top" alt="..." style="border-radius:50%;">
+          <div class="card-body m-0">
+            <h5 class="d-flex justify-content-center">Emre Aşcı </h5>
+          </div>
+        </div>
+
+        <div class="card m-1" style="width: 10rem;border: none;">
+          <img src="/images/boy.png" class="card-img-top" alt="..." style="border-radius:50%;">
+          <div class="card-body m-0">
+            <h5 class="d-flex justify-content-center">Bahri Akçan</h5>
+          </div>
+        </div>
+
+        <div class="card m-1" style="width: 10rem;border: none;">
+          <img src="/images/woman.png" class="card-img-top" alt="..." style="border-radius:50%;">
+          <div class="card-body m-0">
+            <h5 class="d-flex justify-content-center">Fatma Acar</h5>
+          </div>
+        </div>
+
+        <div class="card m-1" style="width: 10rem;border: none;">
+          <img src="/images/boy.png" class="card-img-top" alt="..." style="border-radius:50%;">
+          <div class="card-body m-0">
+            <h5 class="d-flex justify-content-center">Bahri Akçan</h5>
+          </div>
+        </div>
+
+        <div class="card m-1" style="width: 10rem;border: none;">
+          <img src="/images/woman.png" class="card-img-top" alt="..." style="border-radius:50%;">
+          <div class="card-body m-0">
+            <h5 class="d-flex justify-content-center">Fatma Acar</h5>
+          </div>
+        </div>
+
+        <div class="card m-1" style="width: 10rem;border: none;">
+          <img src="/images/boy.png" class="card-img-top" alt="..." style="border-radius:50%;">
+          <div class="card-body m-0">
+            <h5 class="d-flex justify-content-center">Bahri Akçan</h5>
+          </div>
+        </div>
+
+        <div class="card m-1" style="width: 10rem;border: none;">
+          <img src="/images/woman.png" class="card-img-top" alt="..." style="border-radius:50%;">
+          <div class="card-body m-0">
+            <h5 class="d-flex justify-content-center">Fatma Acar</h5>
+          </div>
+        </div>
+
+        <div class="card m-1" style="width: 10rem;border: none;">
+          <img src="/images/boy.png" class="card-img-top" alt="..." style="border-radius:50%;">
+          <div class="card-body m-0">
+            <h5 class="d-flex justify-content-center">Bahri Akçan</h5>
+          </div>
+        </div>
+
+        <div class="card m-1" style="width: 10rem;border: none;">
+          <img src="/images/woman.png" class="card-img-top" alt="..." style="border-radius:50%;">
+          <div class="card-body m-0">
+            <h5 class="d-flex justify-content-center">Fatma Acar</h5>
+          </div>
+        </div>
+
+        <div class="card m-1" style="width: 10rem;border: none;">
+          <img width="140" height="160" style="border-radius: 50%;" class="card-img-top bg-success" src="https://img.icons8.com/fluency/144/plus.png" alt="plus"/>
+          <div class="card-body m-0">
+            <h5 class="d-flex justify-content-center text-success">Kullanıcı Ekle</h5>
+          </div>
+        </div>
+
+
+
+      </div>
+      <!--end users-->
+    
+
+</body>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</html>

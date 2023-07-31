@@ -24,3 +24,11 @@ addBtn.addEventListener("click",(e)=>{
     showElement(productAdd);
     e.preventDefault();
 })
+const mainCategories=document.querySelectorAll("#left-category button");
+
+mainCategories.forEach(button => {
+  button.addEventListener("click", function(e) {
+    mainCategories.forEach(item => item.classList.remove("active"));
+    this.classList.add("active");
+  });
+});
