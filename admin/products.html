@@ -1,70 +1,75 @@
-<!--Product Add-->
-<div class="container d-flex justify-content-center align-items-center" id="productAdd">
-    <form action="products.html"class="d-flex flex-column justify-content-center">
-
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Ana Kategori Seçin</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Alt Kategori Seçin</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-
-        <div class="mb-3">
-            <label for="formFile" class="form-label">Resim Dosyası Seçin..</label>
-            <input class="form-control" type="file" id="formFile">
-          </div>
-            <div class="flex flex-row">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Fiyat Seçin..</label>
-            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ürün Fiyatı">
-          </div>
-
-          <div class="mb-3">
-            <label for="ad" class="form-label">Ürün Adı</label>
-            <input type="text" class="form-control" id="ad" placeholder="Ürün Adı Girin..">
-          </div>
-
-          <input class="btn btn-success" type="submit" value="Ekle" name="" id="">
-        <a href="products.html" class="btn btn-warning">İptal Et</a>
-    </div>
-    </form>
-</div>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'>
-    <title>Admin Paneli</title>
 </head>
 <body>
     <div class="container" id="left-side" style="max-width: 10rem;float: left;padding: 0;">
-        <div class="list-group">
-            <a href="main.html" class="list-group-item list-group-item-action active" aria-current="true">
-                <i class="fa-solid fa-house fa-lg"></i> Ana Sayfa
-            </a>
-            <a href="products.html" class="list-group-item list-group-item-action"><i class="fa-solid fa-bag-shopping fa-lg"></i> Ürünler</a>
-            <a href="#" class="list-group-item list-group-item-action">item</a>
-            <a href="#" class="list-group-item list-group-item-action">item</a>
-            <a class="list-group-item list-group-item-action" aria-disabled="true">Aitem</a>
-            <a href="#" class="list-group-item list-group-item-action">link item</a>
-            <a href="#" class="list-group-item list-group-item-action"> link item</a>
-            <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-            <a class="list-group-item list-group-item-action " aria-disabled="true">item</a>
+        <div class="list-group" id="left-bar">
+            <a href="main.html" class="list-group-item list-group-item-action" aria-current="true"><i class="fa-solid fa-house fa-lg"></i>Ana Sayfa </a>
+            <a href="products.html" class="list-group-item list-group-item-action"><i class="fa-solid fa-bag-shopping fa-lg"></i>Ürünler</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-users fa-lg"></i>Kullanıcılar</a>
+            <a href="category.html" class="list-group-item list-group-item-action"><i class="fa-solid fa-bars fa-lg"></i>Kategoriler</a>
           </div>
     </div>
-   
+    <!--Ürünler Sayfası-->
+<!-- Ürün Ekleme Alanı -->
+<div id="productsPage">
+    <div class="container d-flex justify-content-center align-items-center" id="productAdd" >
+        <form action="products.html"class="d-flex flex-column justify-content-center">
+    
+          <div class="container mt-5">
+            <h2>Ürün Ekleme Formu</h2>
+            
+              <div class="mb-3">
+                <label for="productName" class="form-label">Ürün Adı</label>
+                <input type="text" class="form-control" id="productName" required>
+              </div>
+              <div class="mb-3">
+                <label for="productFeatures" class="form-label">Ürün Özellikleri</label>
+                <textarea class="form-control" id="productFeatures" rows="3" required></textarea>
+              </div>
+              
+                <div class="col  d-flex align-items-center justify-content-between ">
+                  <label for="category" class="form-label">Kategori</label>
+                  <select class="form-select" id="category" required>
+                    <option value="" selected disabled>Seçiniz</option>
+                    <!-- Kategori seçenekleri buraya eklenecek -->
+                  </select>
+                </div>
+                <div class="col  d-flex justify-content-center justify-content-between">
+                  <label for="subCategory" class="form-label">Alt Kategori</label>
+                  <select class="form-select" id="subCategory" required>
+                    <option value="" selected disabled>Seçiniz</option>
+                    <!-- Alt kategori seçenekleri buraya eklenecek -->
+                  </select>
+                </div>
+              
+              <div class="mb-3">
+                <label for="price" class="form-label">Fiyat</label>
+                <input type="number" class="form-control" id="price" required>
+              </div>
+              <div class="mb-3">
+                <label for="productImage" class="form-label">Ürün Resmi</label>
+                <input type="file" class="form-control" id="productImage" multiple accept="image/*" required>
+              </div>
+              <div class="mb-3">
+              </div>
+              <button type="submit" class="btn btn-primary">Ürün Ekle</button>
+              <a class="btn btn-warning" id="cancel">İptal Et</a>
+          </div>
+           
+       
+        </form>
+    </div> 
+
+    <!-- Ürün Ekleme Alanı Sonu-->
       <div class="container" >
         <nav class="navbar bg-body-tertiary" style="background:#64c5b1">
             <div class="container-fluid">
@@ -82,12 +87,52 @@
           <h5 class="card-title">Ürün Ekleme</h5>
           <p class="card-text">Web sitenizi bu sayfada kolaylıkla yönetebilirsiniz..</p>
           <button type="button" id="add" style="max-width:20rem;" class="btn btn-success"><i class="fa-solid fa-plus fa-2xl"></i>Ürün Ekle</button>
+
+      </div>
+      <!--Ürünler-->
+      <div id="products" class="row row-cols-4">
+
+
+        <div class="card" style="width: 16rem;">
+          <img src="/images/antikceviz.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ürün Adı</h5>
+            <p style="font-size: 20px;opacity: 0.7;">1999TL</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1.özellik</li>
+            <li class="list-group-item">2.özellik</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="btn btn-success">Güncelle</a>
+            <a href="#" class="btn btn-danger">Kaldır</a>
+          </div>
         </div>
+
+        <div class="card" style="width: 16rem;">
+            <img src="/images/garnetketen.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ürün Adı</h5>
+              <p style="font-size: 20px;opacity: 0.7;">1999TL</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1.özellik</li>
+              <li class="list-group-item">2.özellik</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="btn btn-success">Güncelle</a>
+              <a href="#" class="btn btn-danger">Kaldır</a>
+            </div>
+          </div>
+
+
       </div>
     </div>
+</div>
+    <!--Ürünler Sayfası Son-->
 
 </body>
-<script src="products.js"></script>
+<script src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </html>
